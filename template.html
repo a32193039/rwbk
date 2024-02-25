@@ -94,8 +94,8 @@
                                                 </div>
                                             </li>
                                             <li>
-                                                <div class="cardlist-con"><p class="cardlist-name" title="代表作品">代表作品</p>
-                                                    <p class="cardlist-value" title=" ${vo.dbzp!} ">${vo.dbzp!}</p>
+                                                <div class="cardlist-con"><p class="cardlist-name" title="任职机构">任职机构</p>
+                                                    <p class="cardlist-value" title=" ${vo.rzjg!} ">${vo.rzjg!}</p>
                                                 </div>
                                             </li>
                                         </ul>
@@ -320,7 +320,7 @@
                     <#list vo.xw as item>
                     <li>
                         <i class="number-icon">${item_index + 1}</i>
-                        <a href="${item.url}"
+                        <a href="${item.url}" title="${item.title}"
                            data-logid="J-sshot-ranking" target="_blank">${item.title}</a>
                         <i class="new-up-icon"></i>
                     </li>
